@@ -32,6 +32,11 @@ ex: admin:admin
     root:root
     administrator:password
 
-Now I try to use SQL injection. 
+Now I try to use SQL injection. Well this was a very low lvl one but still. BTW there are some things needed to do this: 1st-> Find login page. 2nd-> If the url shows any php or id=2 something. 3rd-> If the login attempt returns sql code or error 
+that seems unusaly(not just a warning something like a code written below or around it) That makes a site sql injectable.
 
+Here the ans is simple, just by typing admin'# it lets us enter its site!
 
+//Sequel//
+
+# This is the sixth machine in 2 days. This one taught me how to use mysql(a tool)
