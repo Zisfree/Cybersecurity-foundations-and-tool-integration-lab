@@ -1,4 +1,0 @@
-# Meow is a pretty easy machine to do. It tells you how to use telnet.
-
-First just I just used nmap to find which tcp ports are active which I can use. There was only one which is telnet and since it was the only way to login so I type telnet <IP of target>.
-Now this part is a small problem since I was new so I was confused how I am supposed to get the login credentials soooo I took some help. The answer was root. Nw we have the acess to meow's shell and all I had to do was ls and there it was the flag.
