@@ -1,0 +1,90 @@
+# The machines I did in starting point with there basics
+
+
+## Meow
+
+# Meow is a pretty easy machine to do. It tells you how to use telnet.
+
+First just I just used nmap to find which tcp ports are active which I can use. There was only one which is telnet and since it was the only way to login so I type '''telnet <IP of target>'''.
+Now this part is a small problem since I was new so I was confused how I am supposed to get the login credentials soooo I took some help. The answer was root. Nw we have the acess to meow's shell and all I had to do was ls and there it was the flag.
+
+
+
+
+//Fawn//
+
+# This ones pretty useful. It teaches us how to access ftp(file transfer protocol) servers. They are servers used to transfer file from the server to a system. To secure it we use SFTP(ssh ftp)
+
+First as usual I do nmap scan. I find that it has one port  that is ftp.
+The method to log into an ftp server is simple by typing '''ftp <target ip>''' if has given an anonymous access & it is... by typing anonymous in the username lmao(but only if it has allowed it. Sad right?).
+If it asks the pass just type anything and enter. Ftp is not atall complicated to use. Just find the item you need by typing ls or something else u prefer and when u find it type get with that files name.
+Just make sure u r in the same directory :) 
+
+Next two are also same introducing smbclient(used to enumerate windows others uptil nw were for linux). It is also ezy to use. Just type '''smbclient -L <target ip>''' and we get the info of target windows (-L is used to send connection request to host)
+Then I typed '''smbclient \\\\ip of target\\C$''' here C$(it is the C disk in windows) is just example. 
+
+Other was using redisclient. Its even more ezier. Just type '''redis-cli -h target ip''' that's it, done and then we get inside. Although using it might be a hassel cause it has different kind of commands.
+Redis is actually a software that stores data for a short time. It is there to transfer data internally like a cache to make things smooth. 
+
+
+
+
+//Appointment//
+# Here I learned to use gobuster(stupid and weird  with long commands but useful) and SQL injection.
+
+Gobuster is a tool to brute force directories in shell(its similar to burp suite but faster and without GI)> Its more often used for websites.
+The command for that is '''gobuster dir --url https://target ip/ --wordlist <wordlistlocation>/directory-lists-2.3-small.txt''' (quite long - -)
+And it dosent even work after all that hassel of typing it... so I try a few combination on the login page of the site we ot into by using ip in browser 
+
+ex: admin:admin
+    guest:guest
+    user:user
+    root:root
+    administrator:password
+
+Now I try to use SQL injection. Well this was a very low lvl one but still. BTW there are some things needed to do this: 1st-> Find login page. 2nd-> If the url shows any php or id=2 something. 3rd-> If the login attempt returns sql code or error 
+that seems unusaly(not just a warning something like a code written below or around it) That makes a site sql injectable.
+
+Here the ans is simple, just by typing admin'# it lets us enter its site!
+
+
+
+
+//Sequel//
+
+# This is the sixth machine in 2 days(Although I am writting this as whole in 1 day but still it was real :D). This one taught me how to use mysql(a tool)
+
+As usual I use nmap and the only port open is of mysql so we use it.
+I use the command same as redis - '''mysql -h <targetip> -u root''' h is for connectiong to host and u is to tell which user we login as since we dont hve any info on usernames of that ip.(use mysql's man page for more help.
+Next, there are few different commands we use in mysql;
+
+SHOW databases;               //Prints out the databases we can access
+USE <database_name>;          //Set to use the database named <database_name>
+SHOW tables;                  //Prints out the available tables inside the current database
+SELECT * FROM <table_name>;   //Prints out all the data from the table <table_name>
+
+The ';' must be used after every command you type(but for get command in my shell I found out that get command works even without ; at its ending lol) 
+The use of commands are already in there sequence. Also the '*' in the last command means 'everything' now just speak it with the whole line.
+
+
+
+
+//Crocodile//
+
+# From here on, things become interesting. Nothing new here.
+
+First nmap. I find 2 ports, ftp and http.
+Then '''ftp -n <targetip>''' to auto login as anonymous. Using '''ftp dir''' I can see 2 files and I donwload them using get. The file seemed to have coresponding password for each username.
+Then I use these pass and usernames in ftp but it denies sayig its only anonymous. Then usng gobuster the same command as earlier to brute force the directoires of the site and found a login site.
+Using these pass and usernames there one of my combination matched and we got the flag!
+
+
+
+//Responder//
+
+# This was the first machine I had a headache doing. It has quite a many things to learn too!
+
+I ust completed it yesterday in morning 2a.m. something. Well its as usual to start with nmap.
+
+
+
