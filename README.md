@@ -1,4 +1,4 @@
-# Cybersecurity-foundations-and-tool-integration-lab
+# Cybersecurity Foundation
 
 ## Hi there!👋 
  
