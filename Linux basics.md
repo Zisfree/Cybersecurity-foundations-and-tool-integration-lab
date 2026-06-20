@@ -2,7 +2,6 @@
 
 """THESE WERE MY HAND WRITTEN NOTES I JUST MADE A.I. CONVERT IT INTO TEXT""" --- Typed it cause u might think I just used an AI :P.
 
-Just my raw notes from doing labs on hackthebox academy writting down commands nd system architecture stuff. Its a bit unattaractive so don't mind that part :P.
 
 ### 1. Linux File System Hierarchy (FSH)
 Everything starts at `/` which is the top-level root filesystem. Here is how the directories break down:
