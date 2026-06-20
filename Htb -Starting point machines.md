@@ -3,7 +3,7 @@
 
 ## Meow 🐱
 
-### Meow is a pretty easy machine to do. It tells you how to use telnet.
+**Meow is a pretty easy machine to do. It tells you how to use telnet.**
 
 First just I just used nmap to find which tcp ports are active which I can use. There was only one which is telnet and since it was the only way to login so I type *"telnet <IP of target>"*.
 Now this part is a small problem since I was new so I was confused how I am supposed to get the login credentials soooo I took some help. The answer was root. Nw we have the acess to meow's shell and all I had to do was ls and there it was the flag.
@@ -14,7 +14,7 @@ Now this part is a small problem since I was new so I was confused how I am supp
 ## Fawn 🦌
 
 
-### This ones pretty useful. It teaches us how to access ftp(file transfer protocol) servers. They are servers used to transfer file from the server to a system. To secure it we use SFTP(ssh ftp)
+**This ones pretty useful. It teaches us how to access ftp(file transfer protocol) servers. They are servers used to transfer file from the server to a system. To secure it we use SFTP(ssh ftp)**
 
 First as usual I do nmap scan. I find that it has one port  that is ftp.
 The method to log into an ftp server is simple by typing *"ftp <target ip>"* if has given an anonymous access & it is... by typing anonymous in the username lmao(but only if it has allowed it. Sad right?).
@@ -31,7 +31,7 @@ Redis is actually a software that stores data for a short time. It is there to t
 
 
 ## Appointment 📅
-### Here I learned to use gobuster(stupid and weird  with long commands but useful) and SQL injection.
+**Here I learned to use gobuster(stupid and weird  with long commands but useful) and SQL injection.**
 
 Gobuster is a tool to brute force directories in shell(its similar to burp suite but faster and without GI)> Its more often used for websites.
 The command for that is *"gobuster dir --url https://target ip/ --wordlist <wordlistlocation>/directory-lists-2.3-small.txt"* (quite long - -)
@@ -53,7 +53,7 @@ Here the ans is simple, just by typing admin'# it lets us enter its site!
 
 ## Sequel 🎬
 
-### This is the sixth machine in 2 days(Although I am writting this as whole in 1 day but still it was real :D). This one taught me how to use mysql
+**This is the sixth machine in 2 days(Although I am writting this as whole in 1 day but still it was real :D). This one taught me how to use mysql**
 
 As usual I use nmap and the only port open is of mysql so we use it.
 I use the command same as redis - *"mysql -h <targetip> -u root"* h is for connectiong to host and u is to tell which user we login as since we dont hve any info on usernames of that ip.(use mysql's man page for more help.
@@ -72,7 +72,7 @@ The use of commands are already in there sequence. Also the '*' in the last comm
 
 ## Crocodile 🐊
 
-### From here on, things become interesting. Nothing new here.
+**From here on, things become interesting. Nothing new here.**
 
 First nmap. I find 2 ports, ftp and http.
 Then *"ftp -n <targetip>"* to auto login as anonymous. Using *"ftp dir"* I can see 2 files and I donwload them using get. The file seemed to have coresponding password for each username.
@@ -84,7 +84,7 @@ Using these pass and usernames there one of my combination matched and we got th
 
 ## Responder ✅
 
-### This was the first machine I had a headache doing. It has quite a many things to learn too!
+**This was the first machine I had a headache doing. It has quite a many things to learn too!**
 
 I ust completed it yesterday in morning 2a.m. something. Well its as usual to start with nmap.
 
