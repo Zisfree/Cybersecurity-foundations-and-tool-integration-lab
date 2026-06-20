@@ -1,6 +1,6 @@
 # Cybersecurity-foundations-and-tool-integration-lab
 
- Hi there!👋 
+## Hi there!👋 
  
 I am a trainee in cybersecurity. I am growing and I will try and post every work I have done uptil now in this repository so that I and any1 else who wats to see and use them as notes can read them 😃.
 
@@ -10,7 +10,7 @@ I am a trainee in cybersecurity. I am growing and I will try and post every work
 - ✅ Building logic using Python automation scripts
 - 🏆 Practicing beginner CTFs on platforms like picoCTF
 
-### 🛠️ Tools & Technologies I'm Learning
+### 🛠️ Tools & Technologies I am Learning
 - **Languages:** Python, HTML, JavaScript
 - **Operating Systems:** Linux (Ubuntu/Kali), Windows
 - **Security Tools:** CyberChef, Nmap, Wireshark, Burp Suite
