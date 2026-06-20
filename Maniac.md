@@ -6,7 +6,7 @@
 - Ransomware
 - Social Engineering
 - Insider
-- Advanced Presistant
+- Advanced Presistant Threat
 
 Let me explain them inshort one by one:
 
@@ -24,6 +24,17 @@ Let me explain them inshort one by one:
 
 **3. Social Engineering:**
 - I find social engineering quite powerful cause humans might trust you more seeing you physically rather than on web without any acute details. Though its hard to maintain the trust.
-- Social Engineering is all about how u utilise weakness of humans like, their emotions(like scammers do), their curiosity(like an uknown web link does to them), their carelessness.
+- Social Engineering is all about how u utilise weakness of humans like, their emotions(like scammers do), their curiosity(like an uknown web link does to them), their carelessness(phishing).
 - Hackers also might become one of the employees of the company they want to invade in or even use an insider by bribing them and it works rather very easily than getting inside their systems if their security is strong.
 
+**4. Insider:**
+- An Insider can get a most important job done for a hacker. Its to give him data whithout him doing any enumerations.
+- An Insider can be of 3 types:
+ The sneaky one: When an employee wants delibrate harm of any company he might leak impoortant data like private data of customers if he is a higher up.
+ The careless one: The one who accedently gets the data leak.
+ The victim: When an employees password and username get leaked or stolen.
+
+**5. Advanced Persistent Threat:**
+- It is like sneaking into a bookshop and reading books there for free. Just like that hackers from a gang or maybe state funded groups sneak into their targets and extract information.
+- They might last upto the time they are caught and keep on getting data from the host. This makes it dangerous as u dont even know what is creeping inside u.
+- In 202 same thing happend with a company called SolarWinds.
