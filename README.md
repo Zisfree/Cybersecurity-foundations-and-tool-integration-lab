@@ -21,4 +21,4 @@ I am a trainee in cybersecurity. I am growing and I will try and post every work
  **HTB username** - shame0x2 [https://app.hackthebox.com/home]
 
 ---
-*“༄Air does not bend, it curves.༄”*
+*“༄ Air does not bend, it curves ༄”*
