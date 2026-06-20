@@ -8,7 +8,6 @@ I am a trainee in cybersecurity. I am growing and I will try and post every work
 - 🌐 Learning Computer Networking Basics
 - 🐧 Getting comfortable with Linux command line & Kali Linux
 - ✅ Building logic using Python automation scripts
-- 🏆 Practicing beginner CTFs on platforms like picoCTF
 
 ### 🛠️ Tools & Technologies I am Learning
 - **Languages:** Python, HTML, JavaScript
