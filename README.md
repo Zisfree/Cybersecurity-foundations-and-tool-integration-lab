@@ -1,2 +1,20 @@
 # Cybersecurity-foundations-and-tool-integration-lab
-A personal growing repository featuring my hands on journey into penetration testing :)
+
+ Hi there! 👋
+ 
+I am a traniee in cyber security. I am growing and I will try and post every work I have done uptil now in this repository so that I and any1 else who wats to see and use them as notes can read them 😃.
+
+### 🎯 My Focus Areas
+- 🌐 Learning Computer Networking Basics
+- 🐧 Getting comfortable with Linux command line & Kali Linux
+- ✅ Building logic using Python automation scripts
+- 🏆 Practicing beginner CTFs on platforms like picoCTF
+
+### 🛠️ Tools & Technologies I'm Learning
+- **Languages:** Python, HTML, JavaScript
+- **Operating Systems:** Linux (Ubuntu/Kali), Windows
+- **Security Tools:** CyberChef, Nmap, Wireshark, Burp Suite
+
+---
+*“When you see light.”*
+
