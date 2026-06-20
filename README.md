@@ -17,5 +17,4 @@ I am a trainee in cybersecurity. I am growing and I will try and post every work
  **HTB username** - shame0x2 [https://app.hackthebox.com/home]
 
 ---
-*“When you see light”*
-
+*“Air does not bend, it curves.”*
