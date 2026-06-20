@@ -2,7 +2,7 @@
 
 ## Hi there!👋 
  
-I am a trainee in cybersecurity. I am growing and I will try and post every work I have done uptil now in this repository so that I and any1 else who wats to see and use them as notes can read them 😃.
+I am a trainee in cybersecurity. I am growing and I will try and post every work I have done uptil now in this repository so that I and any1 else who wants to see and use them as notes can read them 😃.
 
 ### 🎯 Areas I am developing
 - 🌐 Learning Computer Networking Basics
