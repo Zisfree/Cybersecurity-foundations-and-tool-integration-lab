@@ -2,7 +2,7 @@
 
  Hi there! 👋
  
-I am a traniee in cyber security. I am growing and I will try and post every work I have done uptil now in this repository so that I and any1 else who wats to see and use them as notes can read them 😃.
+I am a trainee in cybersecurity. I am growing and I will try and post every work I have done uptil now in this repository so that I and any1 else who wats to see and use them as notes can read them 😃.
 
 ### 🎯 My Focus Areas
 - 🌐 Learning Computer Networking Basics
