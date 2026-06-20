@@ -1,6 +1,6 @@
 # Cybersecurity-foundations-and-tool-integration-lab
 
- Hi there! 👋
+ Hi there!👋 
  
 I am a trainee in cybersecurity. I am growing and I will try and post every work I have done uptil now in this repository so that I and any1 else who wats to see and use them as notes can read them 😃.
 
@@ -15,6 +15,8 @@ I am a trainee in cybersecurity. I am growing and I will try and post every work
 - **Operating Systems:** Linux (Ubuntu/Kali), Windows
 - **Security Tools:** CyberChef, Nmap, Wireshark, Burp Suite
 
+ **HTB username** - shame0x2 [https://app.hackthebox.com/home]
+
 ---
-*“When you see light.”*
+*“When you see light”*
 
