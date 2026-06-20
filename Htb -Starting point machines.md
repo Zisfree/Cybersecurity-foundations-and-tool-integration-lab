@@ -1,17 +1,18 @@
 # The machines I did in starting point with their basics
 ### I have deleted the one I made earlier cause I did not make it an md file 😅
 
-## Meow
+## Meow 🐱
 
 ### Meow is a pretty easy machine to do. It tells you how to use telnet.
 
 First just I just used nmap to find which tcp ports are active which I can use. There was only one which is telnet and since it was the only way to login so I type '''telnet <IP of target>'''.
 Now this part is a small problem since I was new so I was confused how I am supposed to get the login credentials soooo I took some help. The answer was root. Nw we have the acess to meow's shell and all I had to do was ls and there it was the flag.
 
+---
 
 
+## Fawn 🦌
 
-## Fawn
 
 ### This ones pretty useful. It teaches us how to access ftp(file transfer protocol) servers. They are servers used to transfer file from the server to a system. To secure it we use SFTP(ssh ftp)
 
@@ -26,10 +27,10 @@ Then I typed '''smbclient \\\\ip of target\\C$''' here C$(it is the C disk in wi
 Other was using redisclient. Its even more ezier. Just type '''redis-cli -h target ip''' that's it, done and then we get inside. Although using it might be a hassel cause it has different kind of commands.
 Redis is actually a software that stores data for a short time. It is there to transfer data internally like a cache to make things smooth. 
 
+---
 
 
-
-## Appointment
+## Appointment 📅
 ### Here I learned to use gobuster(stupid and weird  with long commands but useful) and SQL injection.
 
 Gobuster is a tool to brute force directories in shell(its similar to burp suite but faster and without GI)> Its more often used for websites.
@@ -47,10 +48,10 @@ that seems unusaly(not just a warning something like a code written below or aro
 
 Here the ans is simple, just by typing admin'# it lets us enter its site!
 
+---
 
 
-
-## Sequel
+## Sequel 🎬
 
 ### This is the sixth machine in 2 days(Although I am writting this as whole in 1 day but still it was real :D). This one taught me how to use mysql
 
@@ -66,10 +67,10 @@ SELECT * FROM <table_name>;   //Prints out all the data from the table <table_na
 The ';' must be used after every command you type(but for get command in my shell I found out that get command works even without ; at its ending lol) 
 The use of commands are already in there sequence. Also the '*' in the last command means 'everything' now just speak it with the whole line.
 
+---
 
 
-
-## Crocodile
+## Crocodile 🐊
 
 ### From here on, things become interesting. Nothing new here.
 
@@ -78,9 +79,10 @@ Then '''ftp -n <targetip>''' to auto login as anonymous. Using '''ftp dir''' I c
 Then I use these pass and usernames in ftp but it denies sayig its only anonymous. Then usng gobuster the same command as earlier to brute force the directoires of the site and found a login site.
 Using these pass and usernames there one of my combination matched and we got the flag!
 
+---
 
 
-## Responder
+## Responder ✅
 
 ### This was the first machine I had a headache doing. It has quite a many things to learn too!
 
