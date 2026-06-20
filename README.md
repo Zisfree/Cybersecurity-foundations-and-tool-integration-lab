@@ -10,7 +10,7 @@ I am a trainee in cybersecurity. I am growing and I will try and post every work
 - ✅ Building logic using Python automation scripts
 
 ### 💻 HTB modules I have completed
-- Introduction to Information Security
+- Introduction to Information Security {https://academy.hackthebox.com/achievement/badge/a2ee13d9-6cde-11f1-82d1-bea50ffe6cb4}
 - 
 
 ### 🛠️ Tools & Technologies I am Learning
