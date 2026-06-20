@@ -18,7 +18,7 @@ I am a trainee in cybersecurity. I am growing and I will try and post every work
 - **Operating Systems:** Linux (Ubuntu/Kali), Windows
 - **Security Tools:** CyberChef, Nmap, Wireshark, Burp Suite
 
- **HTB username** - shame0x2 [https://app.hackthebox.com/home]
+ **HTB username** - shame0x2 (recently changed. Earlier it was Zisfree)[https://app.hackthebox.com/home]
 
 ---
 *“༄ Air does not bend, it curves ༄”*
