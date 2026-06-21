@@ -8,3 +8,4 @@
 - When the recievers system gets this data it checks if it has its own MAC address on it or not otherwise it rejects the data sent.
 - Also the MAC address which the reciever sents does not travel through internet it uses a local automated discovery protocol.
 - Also your MAC is only shared if the device is in your LAN outside that others dont recive your MAC address they just send it using your IP.
+- MAC address is erased from your data packets when leaving from the router so that it does not get leaked.
