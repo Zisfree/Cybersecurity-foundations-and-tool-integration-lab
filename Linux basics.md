@@ -61,7 +61,7 @@ For file permissions, a line looks like `drwxr-xr-x`.
 * The next parts break down into Owner/User, Group, and Others. 
 * `rwx` means read, write, and execute permissions. For example, if owner has `rwx` they can do everything, if group has `r-x` they can only read and execute but not write, and others might be `r-x` too.
 
-### 5. Managing Files nd Text Editing
+## 5. Managing Files nd Text Editing
 To move around and manage stuff in the terminal:
 * Pressing `TAB` twice will autocomplete or list out matching directories/files starting with that letter. 
 * A single dot `.` represents the current directory, and a double dot `..` represents the parent directory.
@@ -73,7 +73,7 @@ To move around and manage stuff in the terminal:
 For editing files, common text editors are Vi, Vim, and Nano. 
 To use nano, you just type `nano filename.txt`. It has a simple interface called a pager. At the bottom, it shows short commands where the caret `^` stands for the Ctrl key (so `^X` means Ctrl+X to exit). You save by pressing Ctrl+O and hitting enter to confirm the filename. To just view a file without editing, you use `cat filename.txt`.
 
-### 6. Finding Files nd SSH Connections
+## 6. Finding Files nd SSH Connections
 To search for things on the OS, we use `which`, `find`, or `locate`.
 * `which` - lets us determine if a system has specific tools available on it like cURL, netcat, wget, python, go, or gcc. For example: `which nc` or `which cat`.
 * `find` - allows us to filter files by size, date, etc. The format is `find <location> <options>`. For example:
@@ -84,7 +84,7 @@ To search for things on the OS, we use `which`, `find`, or `locate`.
 For connecting to targets over the network, we use SSH (Secure Shell). It is a protocol that allows a client to access a remote system and execute commands without needing any GUI layout. You connect using the command:
 `ssh htb-student@<IP_address>`
 
-### 7. File Descriptors nd Redirection (The Magic Numbers)
+## 7. File Descriptors nd Redirection (The Magic Numbers)
 Another way to handle inputs and outputs is through Redirection. A File Descriptor (FD) in Unix/Linux is a reference maintained by the kernel that allows the system to manage Input/Output operations. It acts like a unique identifier or a "magic number" the kernel provides to the program instead of dealing with complex memory addresses or full file paths.
 By default, three file descriptors are open for a data stream:
 1. Data stream for input -> `STDIN (0)`
@@ -97,7 +97,7 @@ For example, if we run:
 This will search for all config files, redirect all the standard errors (`2>`) to `/dev/null` (which acts as a black hole so the screen stays clean), then pipe the output to `grep systemd` to filter only lines containing "systemd", and finally pipe that to `wc -l` (word count line option) to count the total number of results obtained.
 
 
-### 8. STDIN, STDOUT, nd STDERR Mechanics
+## 8. STDIN, STDOUT, nd STDERR Mechanics
 When u run `cat` without specifying a file, the terminal just hangs waiting for input. Whatever u type into it is your standard input `STDIN (FD 0)`. Once u hit enter, the terminal echoes it back as standard output `STDOUT (FD 1)`.
 
 If u run a command like `find /etc -name shadow`, u get hit with two types of data:
@@ -108,18 +108,18 @@ We can clean our screen by targeting these file descriptors directly:
 * `find /etc -name shadow 2>/dev/null` - this dumps all the STDERR stream into the null device black hole so u only see good results.
 * `find /etc -name shadow 1>/dev/null` - this does the exact opposite nd removes all standard outputs leaving only the raw error messages on the screen.
 
-### 9. Output Handling nd Stream Splitting
+## 9. Output Handling nd Stream Splitting
 U can split outputs into different files depending on the stream type:
 * `find /etc -name shadow 2>/dev/null > results.txt` - hides errors nd saves only the good outputs into results.txt inside your current working directory.
 * `find /etc -name shadow 2> error.txt 1> stdout.txt` - saves errors nd successful hits into completely separate files at the same time.
 
-### 10. Redirection Operators nd Appending
+## 10. Redirection Operators nd Appending
 * The `>` sign denotes output redirection. If u use a single `>` to save data, it automatically overwrites the file without asking u first. 
 * To prevent data loss, use `>>` to append data to the end of an existing file like:
   `find /etc -name passwd >> stdout.txt 2>/dev/null`
 * The `<` sign denotes standard input redirection. For example, `cat < results.txt` feeds the file content into cat as an input stream instead of reading it normally.
 
-### 11. Advanced Inputs (Heredocs nd Herestrings)
+## 11. Advanced Inputs (Heredocs nd Herestrings)
 U can generate files directly inside the command line using a "Here Doc" notation:
 ```text
 cat << EOF > filename.txt
@@ -129,18 +129,18 @@ here doc > EOF
 ```
 The marker `EOF` stands for End of File. Hitting enter after typing it terminates the stream and creates the file cleanly in your directory. U can also use `<<<` as a here-string to push short text bits straight into a stream.
 
-### 12. Advanced Pipeline Processing (Pipes nd More)
+## 12. Advanced Pipeline Processing (Pipes nd More)
 Pipes `|` let us redirect the STDOUT of one tool directly into another program to chain workflows. The most common filter tool used in chains is `grep`.
 * `find /etc -name "*.conf" 2>/dev/null | grep systemd | wc -l` - loops a find search, screens out text matching "systemd", and passes it to `wc -l` to count how many lines of results were captured.
 
-### 13. File Inspectors nd Pagers
+## 13. File Inspectors nd Pagers
 When viewing big datasets without opening bulky text editors, use pagers:
 * `more` - basic reader for reading outputs page-by-page. Running `cat /etc/passwd | more` lets u scroll user IDs, GIDs, and default shell listings without cluttering the screen. Hit `Q` to quit.
 * `less` - way more functional than more. It opens files in a completely distinct buffer space. Its output doesn't stay behind in your active terminal scrollback once u close it.
 * `head` - prints the first lines of a target file. Defaults to 10 lines if u don't give an option flag like `head /etc/passwd`.
 * `tail` - does the exact opposite of head and prints the bottom lines of a file.
 
-### 14. Core Sorting nd String Cutting
+## 14. Core Sorting nd String Cutting
 * `sort` - sorts file details alphabetically or numerically to give a clearer overview. Like running `cat /etc/passwd | sort`.
 * `grep -v` - excludes specific strings. We use `cat /etc/passwd | grep -v "false/nologin"` to exclude standard users who have system accounts disabled. This strips out daemon accounts so we only look at real, exploitable user profiles.
 * `cut` - cuts out specific chunks of lines separated by delimiters. Use `-d` to set the delimiter (like a colon `:`) and `-f` to specify the fields u want. For example:
@@ -148,7 +148,7 @@ When viewing big datasets without opening bulky text editors, use pagers:
   This prints out just fields 1 and 2 (username and password flag) for active accounts.
 * `tr` - string pager utility used to replace or remove characters from lines. For instance, `tr ":" " "` replaces colons with clean blank spaces.
 
-### 15. Structural Formatting (Column nd Awk)
+## 15. Structural Formatting (Column nd Awk)
 * `column` - creates structured column views from messy raw files. For example:
   `cat /etc/passwd | grep -v "nologin" | tr ":" " " | column -t`
   This turns colon-separated user data into a clean tabular form.
@@ -156,7 +156,7 @@ When viewing big datasets without opening bulky text editors, use pagers:
   `cat /etc/passwd | grep -v "nologin" | tr ":" " " | awk '{print $1, $NF}'`
   This prints just the username and their default shell path side-by-side.
 
-### 16. Regular Expressions (RegEx Blueprints)
+## 16. Regular Expressions (RegEx Blueprints)
 RegEx is like crafting perfect blueprints for matching text patterns inside target files using metacharacters (symbols representing digits, letters, etc.). It helps us group and extract what we need using different brackets:
 * `()` - parenthesis are used to group parts of a regex path together.
 * `[]` - square brackets define character classes or specific matching targets. For example, running `grep -E "Port 2[254]"` catches text containing Port 22, Port 25, or Port 24.
@@ -164,12 +164,12 @@ RegEx is like crafting perfect blueprints for matching text patterns inside targ
 * `|` - serves as an OR operator to flag matches if either expression hits.
 * `*` - functions like an AND mechanic, showing matches only if both conditions are present in the expression line.
 
-### 17. Direct Stream Editing (Sed)
+## 17. Direct Stream Editing (Sed)
 * `sed` - a stream editor tool used to modify text on the fly across a whole file or standard I/O stream. It uses the `s` flag for substitution and the `g` flag for a global replacement across all matches. For instance:
   `sed 's/bin/me/g'`
   This matches every string instance of "bin" across the entire text stream and switches it to "me" automatically.
 
-### 18. Core Directory nd Directory Execution Logic
+## 18. Core Directory nd Directory Execution Logic
 * `chmod` - sets user permissions using octal numerical values or bit notations where Read = 4, Write = 2, and Execute = 1.
   Summing the active bits together creates the octal values. For instance, `chmod 754 shell` sets User to 7 (4+2+1 = rwx), Group to 5 (4+1 = r-x), and Others to 4 (4 = r--).
 * U can also change configurations symbolically using operators like `chmod a+r shell` so all user tiers gain read rights.
