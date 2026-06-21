@@ -3,7 +3,7 @@
 """THESE WERE MY HAND WRITTEN NOTES I JUST MADE A.I. CONVERT IT INTO TEXT""" --- Typed it cause u might think I just used an AI :P.
 
 
-### 1. Linux File System Hierarchy (FSH)
+## 1. Linux File System Hierarchy (FSH)
 Everything starts at `/` which is the top-level root filesystem. Here is how the directories break down:
 * `/bin` - contains essential command binaries.
 * `/boot` - contains static bootloader, kernel executable, and files required to start Linux OS.
@@ -32,7 +32,7 @@ When looking at the command prompt description, it usually looks like `<username
 * If you see a `#` symbol, it means you are logged in as root and are privileged.
 The environment variable `PS1` controls exactly how your command prompt looks in the terminal frame. If we upload and run a shell on a targeted system (meaning a reverse shell or bind shell to act as a bridge between our host and the target), we might not see the username or hostname. This might be due to the PS1 variable not being set correctly. You can always check your `~/.bash_history` file in the user's home directory to see the exact commands you used.
 
-### 3. System Info nd Diagnostic Commands
+## 3. System Info nd Diagnostic Commands
 These are the basic tools used in everyday Linux tasks to check system details and statuses:
 * `whoami` - displays current username.
 * `id` - returns user's identity and groups.
@@ -52,7 +52,7 @@ These are the basic tools used in everyday Linux tasks to check system details a
 
 If you ever forget how to use options or parameters for a tool, you can use `--help` or `-h` (like `ls --help` or `curl -h`). There is also a tool called `apropos` that searches the man-pages and shows a short description of what a command does.
 
-### 4. Storage Block Sizes nd File Permissions
+## 4. Storage Block Sizes nd File Permissions
 When you run the `ls -l` command, it shows permissions, links, owners, and sizes. A directory block size usually shows up as `4096` bytes (4KB), which is the size of the block used to store that folder's info. 
 Memory is organized into buffers (small caches). If you choose 1KB blocks and have a file that is 1.5KB, the system will use 2 blocks and show the file size as 2KB anyway. Larger blocks mean more storage waste for small files, but larger blocks can improve system performance. Common block sizes are 1KB, 2KB, 4KB, 8KB, 16KB, and 32KB. Running `ls -l --block-size=M` doesn't change the actual files, it just changes how the sizes are displayed to you.
 
