@@ -4,8 +4,8 @@
 - Bruteforce.py
 - Sanitizer.py
 
-**📅Basics I have learned uptil now:**
+**📅IMP Basics I have learned uptil now:**
 - Variables
 - if/elif
-- while
 - for
+- while
