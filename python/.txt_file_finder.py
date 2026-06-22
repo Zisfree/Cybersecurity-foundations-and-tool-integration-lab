@@ -13,4 +13,4 @@ def smell(etc):
     print("No. of txt files in etc directory are:", text_files)
 
 smell("/")
-# Peace!
+# Peace
