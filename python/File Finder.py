@@ -6,4 +6,4 @@ def smashpc(etc):                    # smashpc is the pc's name we r searching o
     for y in file_scanner:           # This loop will visit each file in etc folder 1 by 1.
         print(y)
 
-smashpc("/")                         # This makes it scan the entire directory.
+smashpc("/")                         # This makes it scan the entire directory. Consider it a start button for the machine above.
