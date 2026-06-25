@@ -16,7 +16,7 @@ I am a trainee in cybersecurity. I am growing and I will try and post every work
 ### 🛠️ Tools & Technologies I am Learning
 - **Languages:** Python, HTML, JavaScript
 - **Operating Systems:** Linux (Ubuntu/Kali), Windows
-- **Security Tools:** CyberChef, Nmap, Wireshark, Burp Suite
+- **Security Tools:** Nmap, Burpsuit(Little bit), Base64, ffuf, Mysql, php(little bit writing), get, nano
 
  **HTB username** - shame0x2 (recently changed. Earlier it was Zisfree)[https://app.hackthebox.com/home]
 
