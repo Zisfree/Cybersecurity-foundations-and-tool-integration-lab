@@ -31,10 +31,12 @@
  
 
   # CTF
+  ### Finding the vulnerabilty
   - First I get inside a site which had an apply.php at end and contact.php at end.
   - First both seemed sus but after checking them both were lfi proof.
   - But seeing inside apply.php I saw that ther was an upload thing I uploaded my shell.php file which had that *<?php system($_GET["cmd"]); ?>* code. Though the file didnt do much but the site's url changed a bit so i tested it but it failed too.
   - Then I went to its source code and found a url of im something like this */api/image.php/sd2EDW* it seemed very intersig so i tried it a bit too but nothing that I tried worked.
+  ### Seeking help
   - After spending about half an hour I decided to see a writeup and to my suprise evrything I did was correct just the fact I did not use ffuf on that link was the mistake I did.
   - But even after that I was not able to tell what to do so I went to writeups again...
   - After seening it I realized that I did not have the experince to search for any other php file in source code cuz the person used base64 to encode the php files to read them.
