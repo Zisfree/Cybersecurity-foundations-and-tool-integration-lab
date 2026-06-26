@@ -9,6 +9,12 @@ I am a trainee in cybersecurity. I am growing and I will try and post every work
 - 🐧 Getting comfortable with Linux command line & Kali Linux
 - ✅ Building logic using Python automation scripts
 
+###  📝 My Write-ups
+- Htb-Starting Point []
+-  SQL injection []
+-  File Inclusion []
+
+
 ### 💻 HTB modules I have completed
 - Introduction to Information Security [https://academy.hackthebox.com/achievement/badge/a2ee13d9-6cde-11f1-82d1-bea50ffe6cb4]
 - SQL Injection Fundamentals [https://academy.hackthebox.com/achievement/2542956/33]
