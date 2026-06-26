@@ -11,7 +11,7 @@ I am a trainee in cybersecurity. I am growing and I will try and post every work
 
 ###  📝 My Write-ups
 - Htb-Starting Point []
--  SQL injection []
+-  SQL injection [https://github.com/Zisfree/Cybersecurity-foundations-and-tool-integration-lab/blob/main/SQL%20injection.md]
 -  File Inclusion [https://github.com/Zisfree/Cybersecurity-foundations-and-tool-integration-lab/blob/main/File%20Inclusion.md]
 
 
