@@ -86,7 +86,11 @@ Using these pass and usernames there one of my combination matched and we got th
 
 **This was the first machine I had a headache doing. It has quite a many things to learn too!**
 
-I ust completed it yesterday in morning 2a.m. something. Well its as usual to start with nmap.
+I just completed it yesterday in morning 2a.m. something. Well its as usual to start with nmap. Just came back to write it cuz I went to do some other modules 😁.
+- Now, after doing the nmap scan I get 2 ports as a result. One is of Microsoft and other is of apache.
+- After this I paste the ip in the browser but it returns nothing which quite weird to me. Also the reason I took so long to complete it was because of this. I didnt know what to do cause the site didnt even open.
+- After all the time I read it in a writeup that I have to use `echo "10.129.128.223 unika.htb" | sudo tee -a /etc/hosts` command cause the site was sharing its resources to another site which we need to go into. To get inside that site we use the command to tell our system that this is the website we want to visit so please take me there and then it openes.
+- After this I basically used the writeups as a theory cause it everything that came was new
 
 
 
