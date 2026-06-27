@@ -14,6 +14,8 @@ I am a trainee in cybersecurity. I am growing and I will try and post every work
 -  SQL injection [https://github.com/Zisfree/Cybersecurity-foundations-and-tool-integration-lab/blob/main/SQL%20injection.md]
 -  File Inclusion [https://github.com/Zisfree/Cybersecurity-foundations-and-tool-integration-lab/blob/main/File%20Inclusion.md]
 
+### 🔐 TryHackMe Profile
+- Username - Scylaac [https://tryhackme.com/p/Scylaac]
 
 ### 💻 HTB modules I have completed
 - Introduction to Information Security [https://academy.hackthebox.com/achievement/badge/a2ee13d9-6cde-11f1-82d1-bea50ffe6cb4]
