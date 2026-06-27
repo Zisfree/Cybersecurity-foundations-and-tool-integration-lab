@@ -2,4 +2,6 @@
 
 ### 🟢 The topics I liked the most while researching:
 - Warp, VPN & Data transfer
+
+### 👽 The one that took most time to understand:
 - API
