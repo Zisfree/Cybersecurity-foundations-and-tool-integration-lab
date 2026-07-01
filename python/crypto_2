@@ -1,0 +1,6 @@
+hex = "636f6e67726163747320666f72206e6f7468696e67"
+
+x = bytes.fromhex(hex) 
+# This function will convert the hex into a byte(readable byte/text)
+# The code will give b'something' as the result. To remove the b'' we have to add *a = hex_bytes.decode('ascii')* and change print(a).
+print(x)
