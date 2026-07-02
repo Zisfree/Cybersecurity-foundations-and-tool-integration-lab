@@ -16,4 +16,4 @@
 - Base64 is a 6 bit encoded charecter.
 - It is the most used on websites. Convert your image or vedios else into base64 and put it inside the code. It reads is without needing to download any file.
 - It reads the files in in 6 bits where a standard byte is 8 bit. To overcome this it just divides the whole lowest common multiple of both 6 and 8.[]
-- For python - []
+- For python - [https://github.com/Zisfree/Cybersecurity-foundations-and-tool-integration-lab/blob/main/python/crypto_3.py]
