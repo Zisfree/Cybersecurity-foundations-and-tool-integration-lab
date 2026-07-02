@@ -23,5 +23,6 @@
 - So we convert our data into hex/base16 then into a base10.
 - Like if we have *1937076257*. This is a base10 [https://github.com/Zisfree/Cybersecurity-foundations-and-tool-integration-lab/blob/main/python/crypto_4.py]
 
-## XOR
-- XOR is a bitwise operator (which use 0's and 1's) 
+### ⊕ XOR
+- XOR is a bitwise operator (which use 0's and 1's). It prints 0 if bits are same and 1 if they are different.
+- It is denoted or used by ⊕/^. []
