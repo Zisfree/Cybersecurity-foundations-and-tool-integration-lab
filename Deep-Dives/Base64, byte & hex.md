@@ -17,3 +17,4 @@
 ## Hex
 - Hex is the actuall 2 digit base16 data we see. It is base16 cause it uses charecters from 0-9 and A-F
 - A single hex charecter represents only 4 bits(like in 4A 4 only represents the 4 bits. The other 4 are done by A).
+- To identify the hex system usualy starts it with *0x* charecters.
