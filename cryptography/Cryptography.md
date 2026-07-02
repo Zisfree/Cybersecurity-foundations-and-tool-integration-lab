@@ -21,3 +21,4 @@
 ### Base10
 - The advanced encryptions, like RSA don't understand what an alphabet is. They only understand mathematics.
 - So we convert our data into hex/base16 then into a base10.
+- Like if we have *1937076257*. This is a base10
