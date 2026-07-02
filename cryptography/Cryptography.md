@@ -26,4 +26,5 @@
 ### ⊕ XOR
 - XOR is a bitwise operator (which use 0's and 1's). It prints 0 if bits are same and 1 if they are different.
 - It is denoted or used by ⊕/^. [https://github.com/Zisfree/Cybersecurity-foundations-and-tool-integration-lab/blob/main/Deep-Dives/XOR.md]
-- Using python []
+- Using python [https://github.com/Zisfree/Cybersecurity-foundations-and-tool-integration-lab/blob/main/python/crypto_5.py]
+- 
