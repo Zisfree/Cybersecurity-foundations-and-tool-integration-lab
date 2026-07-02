@@ -18,4 +18,6 @@
 - It reads the files in in 6 bits where a standard byte is 8 bit. To overcome this it just divides the whole lowest common multiple of both 6 and 8.[]
 - For python - [https://github.com/Zisfree/Cybersecurity-foundations-and-tool-integration-lab/blob/main/python/crypto_3.py]
 
-### Base16 & Base10
+### Base10
+- The advanced encryptions, like RSA don't understand what an alphabet is. They only understand mathematics.
+- So we convert our data into hex/base16 then into a base10.
